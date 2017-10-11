@@ -50,15 +50,15 @@ FileDelete, %WhichFolder%\%sc50%
 FileDelete, %WhichFolder%\%sc60%
 FileDelete, %WhichFolder%\%sc70%
 FileDelete, %WhichFolder%\%sc80%
-MsgBox, File are deleted. Manually delete %sc50%
-FileCopy, N:\U10\%Version%\Data\DatabaseRights_mssql.sql, %WhichFolder%\%sc10%,1
-FileCopy, N:\U10\%Version%\Data\RebuildIndexes_mssql.sql, %WhichFolder%\%sc20%,1
-FileCopy, N:\U10\%Version%\Data\1000_Rep_mssql.sql, %WhichFolder%\%sc30%,1
-FileCopy, N:\U10\%Version%\Data\1000_Chk_MsSql.sql, %WhichFolder%\%sc40%,1
-FileCopy, N:\U10\%Version%\Data\1000_mssql.sql, %WhichFolder%\%sc50%,1
-FileCopy, N:\U10\%Version%\Data\1000_Rep_MsSql.sql, %WhichFolder%\%sc60%,1
-FileCopy, N:\U10\%Version%\Data\1000_Chk_MsSql.sql, %WhichFolder%\%sc70%,1
-FileCopy, N:\U10\%Version%\Data\DatabaseShrink_mssql.sql, %WhichFolder%\%sc80%,1
+MsgBox, File are deleted. Maybe manually delete %sc50%
+FileCopy, P:\U10\%Version%\Data\DatabaseRights_mssql.sql, %WhichFolder%\%sc10%,1
+FileCopy, P:\U10\%Version%\Data\RebuildIndexes_mssql.sql, %WhichFolder%\%sc20%,1
+FileCopy, P:\U10\%Version%\Data\1000_Rep_mssql.sql, %WhichFolder%\%sc30%,1
+FileCopy, P:\U10\%Version%\Data\1000_Chk_MsSql.sql, %WhichFolder%\%sc40%,1
+FileCopy, P:\U10\%Version%\Data\1000_mssql.sql, %WhichFolder%\%sc50%,1
+FileCopy, P:\U10\%Version%\Data\1000_Rep_MsSql.sql, %WhichFolder%\%sc60%,1
+FileCopy, P:\U10\%Version%\Data\1000_Chk_MsSql.sql, %WhichFolder%\%sc70%,1
+FileCopy, P:\U10\%Version%\Data\DatabaseShrink_mssql.sql, %WhichFolder%\%sc80%,1
 
 MsgBox Updatescripts for version %Version% have been copied to %WhichFolder%. Thank you for using this awesome tool. Enjoy your day!
 Exit

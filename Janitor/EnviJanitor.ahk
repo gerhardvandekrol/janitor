@@ -453,9 +453,9 @@ IfExist, Lib\ultimo_SUT_wide.png, SplashImage, Lib\ultimo_SUT_wide.png, A ,this 
 	
 FileRemoveDir, %SourceDir%\Website, 1 ; deleting the current files from the directory
 ;FileCopyDir, C:\Environments\DemoUFM21\Services\ServiceHost, %SourceDir%\Website  ;for testing purposes
-FileCopyDir, N:\U10\%Version%\Website, %SourceDir%\Website  ; copy the desired files from the server.
+FileCopyDir, P:\U10\%Version%\Website, %SourceDir%\Website  ; copy the desired files from the server.
 FileRemoveDir, %SourceDir%\Services, 1
-FileCopyDir, N:\U10\%Version%\Services, %SourceDir%\Services
+FileCopyDir, P:\U10\%Version%\Services, %SourceDir%\Services
 Progress, Off	
 MsgBox Website and Services folders of %SourceDir% have been replaced with version %Version%. Thank you for using this awesome tool!
 Return

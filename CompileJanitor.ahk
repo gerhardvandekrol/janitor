@@ -26,10 +26,12 @@ FileDelete,%A_ScriptDir%\EnvironmentJanitor\EnviJanitor.ahk
 FileDelete,%A_ScriptDir%\EnvironmentJanitor\EnviJanitor_Installer.ahk
 
 RunWait Ahk2Exe.exe /in "%A_ScriptDir%\EnvironmentJanitor\Lib\GetUpdateScripts2.ahk" /out "%A_ScriptDir%\EnvironmentJanitor\Lib\GetUpdateScripts2.exe" 
+RunWait Ahk2Exe.exe /in "%A_ScriptDir%\EnvironmentJanitor\Lib\GetUpdateScripts1700.ahk" /out "%A_ScriptDir%\EnvironmentJanitor\Lib\GetUpdateScripts1700.exe" 
 RunWait Ahk2Exe.exe /in "%A_ScriptDir%\EnvironmentJanitor\Lib\MyConfiguration2.ahk" /out "%A_ScriptDir%\EnvironmentJanitor\Lib\MyConfiguration2.exe" 
 RunWait Ahk2Exe.exe /in "%A_ScriptDir%\EnvironmentJanitor\Lib\SetLanguages2.ahk" /out "%A_ScriptDir%\EnvironmentJanitor\Lib\SetLanguages2.exe" 
 RunWait Ahk2Exe.exe /in "%A_ScriptDir%\EnvironmentJanitor\Lib\SwitchRecordAuthorization.ahk" /out "%A_ScriptDir%\EnvironmentJanitor\Lib\SwitchRecordAuthorization.exe" 
 FileDelete,%A_ScriptDir%\EnvironmentJanitor\Lib\GetUpdateScripts2.ahk
+FileDelete,%A_ScriptDir%\EnvironmentJanitor\Lib\GetUpdateScripts1700.ahk
 FileDelete,%A_ScriptDir%\EnvironmentJanitor\Lib\MyConfiguration2.ahk
 FileDelete,%A_ScriptDir%\EnvironmentJanitor\Lib\SetLanguages2.ahk
 FileDelete,%A_ScriptDir%\EnvironmentJanitor\Lib\SwitchRecordAuthorization.ahk

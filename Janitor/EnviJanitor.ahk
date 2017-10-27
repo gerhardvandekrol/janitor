@@ -120,6 +120,7 @@ Gui, Add, Button,gBackupDatabase x30 y300 w140 h20 , Backup Database
 
 Gui Add, GroupBox, x20 y340 w225 h230, Environment maintenance
 Gui, Add, Button,gGo5 x30 y360 w125 h20 , Get updatescripts
+Gui, Add, Button,gGo1700Scripts x160 y360 w80 h20 , >= 17.10
 Gui, Add, Button,gGo6 x30 y385 w125 h20 , Update environment 
 Gui, Add, Button,gGo8 x30 y410 w125 h20 , Change language
 Gui, Add, Button,gGo9 x30 y435 w125 h20 , Record Authorization
@@ -440,7 +441,15 @@ Go4: ;Delete FSDtoDeploy
 Return
 
 Go5: ;Get updatescripts
-Run "%A_ScriptDir%\Lib\GetUpdateScripts2.ahk" "%SourceDir%"
+RunWait "%A_ScriptDir%\Lib\GetUpdateScripts2.ahk" "%SourceDir%"
+MsgBox,4,1700 Scripts, Get the 1700 scripts too?
+    IfMsgBox Yes
+        Run "%A_ScriptDir%\Lib\GetUpdateScripts1700.ahk" "%SourceDir%"
+        Return
+Return
+
+Go1700Scripts: ;Get updatescripts for 1710
+Run "%A_ScriptDir%\Lib\GetUpdateScripts1700.ahk" "%SourceDir%"
 Return
 
 Go6: ;Update environment

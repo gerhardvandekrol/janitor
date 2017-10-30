@@ -4,14 +4,14 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ;define the naming of the scripts
-sc110 = 110_DatabaseRights_mssql.sql
-sc120 = 120_RebuildIndexes_mssql.sql
-sc130 = 130_1000_Rep_mssql.sql
-sc140 = 140_1000_Chk_MsSql.sql
-sc150 = 150_1000_mssql.sql
-sc160 = 160_1000_Rep_MsSql.sql
-sc170 = 170_1000_Chk_MsSql.sql
-sc180 = 180_DatabaseShrink_mssql.sql
+sc10 = 10_DatabaseRights_mssql.sql
+sc20 = 20_RebuildIndexes_mssql.sql
+sc30 = 30_1000_Rep_mssql.sql
+sc40 = 40_1000_Chk_MsSql.sql
+sc50 = 50_1000_mssql.sql
+sc60 = 60_1000_Rep_MsSql.sql
+sc70 = 70_1000_Chk_MsSql.sql
+sc80 = 80_DatabaseShrink_mssql.sql
 
 EnviDir = C:\Environments
 EnviDir=%1%
@@ -35,30 +35,30 @@ InputBox,Version, Version, Enter the versionnumber in the format xx.xx.xx ;What 
  if ErrorLevel  ; i.e. it's not blank or zero.
     GoSub, Sub2	
 
-MsgBox, 4, , We are going to copy the new update files from version %version% to %WhichFolder% and delete the current files`n`n%sc110%`n%sc120%`n%sc130%`n%sc140%`n%sc150%`n%sc160%`n%sc170%`n%sc180%`n`nWould you like to continue?, 15  ; 15-second timeout.
+MsgBox, 4, , We are going to copy the new update files from version %version% to %WhichFolder% and delete the current files`n`n%sc10%`n%sc20%`n%sc30%`n%sc40%`n%sc50%`n%sc60%`n%sc70%`n%sc80%`n`nWould you like to continue?, 15  ; 15-second timeout.
 IfMsgBox, No
     Return  ; User pressed the "No" button.
 IfMsgBox, Timeout
     Return ; i.e. Assume "No" if it timed out.
 ; Otherwise, continue:
 
-FileDelete, %WhichFolder%\%sc110%
-FileDelete, %WhichFolder%\%sc120%
-FileDelete, %WhichFolder%\%sc130%
-FileDelete, %WhichFolder%\%sc140%
-FileDelete, %WhichFolder%\%sc150%
-FileDelete, %WhichFolder%\%sc160%
-FileDelete, %WhichFolder%\%sc170%
-FileDelete, %WhichFolder%\%sc180%
-MsgBox, File are deleted. Maybe %sc150% needs to be deleted manually.
-FileCopy, P:\U10\%Version%\Data\DatabaseRights_mssql.sql, %WhichFolder%\%sc110%,1
-FileCopy, P:\U10\%Version%\Data\RebuildIndexes_mssql.sql, %WhichFolder%\%sc120%,1
-FileCopy, P:\U10\%Version%\Data\1000_Rep_mssql.sql, %WhichFolder%\%sc130%,1
-FileCopy, P:\U10\%Version%\Data\1000_Chk_MsSql.sql, %WhichFolder%\%sc140%,1
-FileCopy, P:\U10\%Version%\Data\1000_mssql.sql, %WhichFolder%\%sc150%,1
-FileCopy, P:\U10\%Version%\Data\1000_Rep_MsSql.sql, %WhichFolder%\%sc160%,1
-FileCopy, P:\U10\%Version%\Data\1000_Chk_MsSql.sql, %WhichFolder%\%sc170%,1
-FileCopy, P:\U10\%Version%\Data\DatabaseShrink_mssql.sql, %WhichFolder%\%sc180%,1
+FileDelete, %WhichFolder%\%sc10%
+FileDelete, %WhichFolder%\%sc20%
+FileDelete, %WhichFolder%\%sc30%
+FileDelete, %WhichFolder%\%sc40%
+FileDelete, %WhichFolder%\%sc50%
+FileDelete, %WhichFolder%\%sc60%
+FileDelete, %WhichFolder%\%sc70%
+FileDelete, %WhichFolder%\%sc80%
+MsgBox, File are deleted. Maybe %sc50% needs to be deleted manually.
+FileCopy, P:\U10\%Version%\Data\DatabaseRights_mssql.sql, %WhichFolder%\%sc10%,1
+FileCopy, P:\U10\%Version%\Data\RebuildIndexes_mssql.sql, %WhichFolder%\%sc20%,1
+FileCopy, P:\U10\%Version%\Data\1000_Rep_mssql.sql, %WhichFolder%\%sc30%,1
+FileCopy, P:\U10\%Version%\Data\1000_Chk_MsSql.sql, %WhichFolder%\%sc40%,1
+FileCopy, P:\U10\%Version%\Data\1000_mssql.sql, %WhichFolder%\%sc50%,1
+FileCopy, P:\U10\%Version%\Data\1000_Rep_MsSql.sql, %WhichFolder%\%sc60%,1
+FileCopy, P:\U10\%Version%\Data\1000_Chk_MsSql.sql, %WhichFolder%\%sc70%,1
+FileCopy, P:\U10\%Version%\Data\DatabaseShrink_mssql.sql, %WhichFolder%\%sc80%,1
 
 MsgBox Updatescripts for version %Version% have been copied to %WhichFolder%. Thank you for using this awesome tool. Enjoy your day!
 Exit

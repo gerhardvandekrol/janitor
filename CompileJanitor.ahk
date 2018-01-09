@@ -39,6 +39,6 @@ FileDelete,%A_ScriptDir%\EnvironmentJanitor\Lib\SwitchRecordAuthorization.ahk
 
 MsgBox, 4, Ready, EnvironmentJanitor is compiled. Copy to Shared SUT drive?
       IfMsgBox Yes
-        FileCopyDir, %A_ScriptDir%\EnvironmentJanitor, M:\SUT\_Templates & Documents\SUT SuperTools\EnvironmentJanitor,1
+        FileCopyDir, %A_ScriptDir%\EnvironmentJanitor, \\vmfile02.ishbv.nl\Customer Support Services\SUT\_Templates & Documents\SUT SuperTools\EnvironmentJanitor,1
      else 
     MsgBox, Bye

@@ -186,7 +186,7 @@ ButtonClose:
 
 Update:
 ;SourceJanitor = C:\Users\Gerhard\Google Drive\AHK\Source\EnvironmentJanitor
-SourceJanitor = M:\SUT\_Templates & Documents\SUT SuperTools\EnvironmentJanitor
+SourceJanitor = \\vmfile02.ishbv.nl\Customer Support Services\SUT\_Templates & Documents\SUT SuperTools\EnvironmentJanitor
 IfNotExist, %SourceJanitor%\*.*
 {
     MsgBox, Source not available. Installation only possible when connected to Ultimo network.
@@ -271,7 +271,7 @@ FileDelete EnviJanitor_Installer.zip
 return
 
 GetNewEnvi:
-SourceJanitor = M:\SUT\_Templates & Documents\SUT SuperTools\EnvironmentJanitor
+SourceJanitor = \\vmfile02.ishbv.nl\Customer Support Services\SUT\_Templates & Documents\SUT SuperTools\EnvironmentJanitor
 IfExist, %SourceJanitor%\*.*
 {
     IniFile =  %SourceJanitor%\Janitor.ini
@@ -462,9 +462,9 @@ IfExist, Lib\ultimo_SUT_wide.png, SplashImage, Lib\ultimo_SUT_wide.png, A ,this 
 	
 FileRemoveDir, %SourceDir%\Website, 1 ; deleting the current files from the directory
 ;FileCopyDir, C:\Environments\DemoUFM21\Services\ServiceHost, %SourceDir%\Website  ;for testing purposes
-FileCopyDir, P:\U10\%Version%\Website, %SourceDir%\Website  ; copy the desired files from the server.
+FileCopyDir, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Website, %SourceDir%\Website  ; copy the desired files from the server.
 FileRemoveDir, %SourceDir%\Services, 1
-FileCopyDir, P:\U10\%Version%\Services, %SourceDir%\Services
+FileCopyDir, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Services, %SourceDir%\Services
 Progress, Off	
 MsgBox Website and Services folders of %SourceDir% have been replaced with version %Version%. Thank you for using this awesome tool!
 Return

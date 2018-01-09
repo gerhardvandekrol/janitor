@@ -61,15 +61,15 @@ FileDelete, %WhichFolder%\%sc80%
 FileDelete, %WhichFolder%\%sc90%
 
 MsgBox, File are deleted. Maybe %sc250% needs to be deleted manually.
-FileCopy, P:\U10\%Version%\Data\1700_DatabaseRights_mssql.sql, %WhichFolder%\%sc10%,1
-FileCopy, P:\U10\%Version%\Data\RebuildIndexes_mssql.sql, %WhichFolder%\%sc20%,1
-FileCopy, P:\U10\%Version%\Data\1700_Rep_mssql.sql, %WhichFolder%\%sc30%,1
-FileCopy, P:\U10\%Version%\Data\1700_Chk_MsSql.sql, %WhichFolder%\%sc40%,1
-FileCopy, P:\U10\%Version%\Data\1700_mssql.sql, %WhichFolder%\%sc50%,1
-FileCopy, P:\U10\%Version%\Data\1700_Rep_MsSql.sql, %WhichFolder%\%sc60%,1
-FileCopy, P:\U10\%Version%\Data\1700_Chk_MsSql.sql, %WhichFolder%\%sc70%,1
-FileCopy, P:\U10\%Version%\Data\1700_SetColumnOrder_mssql.sql, %WhichFolder%\%sc80%,1
-FileCopy, P:\U10\%Version%\Data\DatabaseShrink_mssql.sql, %WhichFolder%\%sc90%,1
+FileCopy, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Data\1700_DatabaseRights_mssql.sql, %WhichFolder%\%sc10%,1
+FileCopy, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Data\RebuildIndexes_mssql.sql, %WhichFolder%\%sc20%,1
+FileCopy, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Data\1700_Rep_mssql.sql, %WhichFolder%\%sc30%,1
+FileCopy, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Data\1700_Chk_MsSql.sql, %WhichFolder%\%sc40%,1
+FileCopy, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Data\1700_mssql.sql, %WhichFolder%\%sc50%,1
+FileCopy, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Data\1700_Rep_MsSql.sql, %WhichFolder%\%sc60%,1
+FileCopy, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Data\1700_Chk_MsSql.sql, %WhichFolder%\%sc70%,1
+FileCopy, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Data\1700_SetColumnOrder_mssql.sql, %WhichFolder%\%sc80%,1
+FileCopy, \\vmfile01.ishbv.nl\Builds\U10\%Version%\Data\DatabaseShrink_mssql.sql, %WhichFolder%\%sc90%,1
 
 MsgBox Updatescripts for version %Version% have been copied to %WhichFolder%. Thank you for using this awesome tool. Enjoy your day!
 Exit

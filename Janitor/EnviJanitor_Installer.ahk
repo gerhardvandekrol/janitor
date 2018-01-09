@@ -4,10 +4,10 @@
 SetWorkingDir %A_ScriptDir%
 CanIGo=%1%
 
-SourceJanitor = M:\SUT\_Templates & Documents\SUT SuperTools\EnvironmentJanitor
+SourceJanitor = \\vmfile02.ishbv.nl\Customer Support Services\SUT\_Templates & Documents\SUT SuperTools\EnvironmentJanitor
 ;SourceJanitor = C:\Users\Gerhard\Google Drive\AHK\Source\EnvironmentJanitor
 InstallDir=%A_ScriptDir%\EnvironmentJanitor
-LogDir = I:\GKL\EnviLog
+LogDir = \\nasultimo01.ishbv.nl\Temp\GKL\EnviLog
 ;LogDir = D:\LogAHK
 
 

@@ -1,0 +1,200 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : vrijdag 26 januari 2018 13:37:23
+   Source : C:\Environments\Elkerliek-now\FileServiceData\
+     Dest : C:\Environments\Elkerliek-now\FileServiceData\MyConfigurationSince_20180126\
+
+    Files : *.*
+	    
+Exc Files : MyConfiguration*.*
+	    *.auto.*
+	    *.rup
+	    
+ Exc Dirs : .git
+	    ScreenDesigner
+	    WorkflowDesigner
+	    Upload
+	    Images
+	    SendEmail
+	    Documenten
+	    MyConfiguration*
+	    
+  Options : *.* /TS /FP /S /DCOPY:DA /COPY:DAT /PURGE /NP /MAXAGE:20180126 /R:5 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   2	C:\Environments\Elkerliek-now\FileServiceData\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\ApplicationHealth\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Charts\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\APOTHEEK\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\BHV UREN\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\DECFAB\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\INET\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\INFRDPLG\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\INFUUS\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\INKOOP\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\INT_CARD\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\INT_QA90\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\INT_SECU\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\ITIL\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\I_A HFD\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\I_A MAG\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\I_A MW\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\KLEDING\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\LAB MW\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\MPHT\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\MT HFD\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\MT MAG\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\MT MW\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\OH 1EMW\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\OH HFD\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\OH INV\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\OH MW\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\RAADPLEEG\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Groups\STDGRP\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\3506\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\4375\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\4707\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\5084\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\5213\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\5707\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\5708\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\5732OLD\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\6081\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\6087\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\6198\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\6472\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\6802\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\6813\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\6950\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\7007\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\8386\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\9341\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\pke\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\TestUltimo\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\ultimo\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\ummadmin\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\ummadmin2\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Dashboard\Users\yko\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\DataSets\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\GridWidgets\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\Interfaces\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Interfaces\QA90\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Interfaces\QA90_Log\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Interfaces\Secutest\
+	  New Dir          3	C:\Environments\Elkerliek-now\FileServiceData\License\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Menus\
+	  New Dir         47	C:\Environments\Elkerliek-now\FileServiceData\Menus\Application\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\
+	  New Dir          3	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\APOTHEEK\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\BHV UREN\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\INET\
+	  New Dir          6	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\INFUUS\
+	  New Dir          7	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\INKOOP\
+	  New Dir          3	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\INT_CARD\
+	  New Dir          6	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\ITIL\
+	  New Dir         18	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\I_A MW\
+	  New Dir          7	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\LAB MW\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\MT HFD\
+	  New Dir         11	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\MT MW\
+	  New Dir          6	C:\Environments\Elkerliek-now\FileServiceData\Menus\Groups\STDGRP\
+	  New Dir       4446	C:\Environments\Elkerliek-now\FileServiceData\Packages\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\PageConfigurations\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PageConfigurations\DE\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PageConfigurations\EN\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PageConfigurations\FR\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PageConfigurations\nl\
+	                   0	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\146\
+	  New Dir          3	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\1977\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\2240\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\2435\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\2469\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\2551\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\2623\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\2736\
+	  New Dir          3	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\2770\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\332\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\3353\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\371\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\3943\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\4017\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\4286\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\4557\
+	                   2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\4820\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\521\
+	  New Dir          6	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\5707\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\6079\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\6172\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\6218\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\6427\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\6802\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\6809\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\7007\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\7784\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\8386\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\8870\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\9341\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\ebr\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\I_A MW_test\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\svc_kiosk_uitleenmag\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\taj\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\ummadmin\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\PersonalSelectionLists\wvetest\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Reports\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Reports\NL\
+	  New Dir        292	C:\Environments\Elkerliek-now\FileServiceData\Reports\NL\odbc\
+	                   3	C:\Environments\Elkerliek-now\FileServiceData\ReservationEditConfiguration\
+	    New File  		     607 2018/01/26 12:26:12	C:\Environments\Elkerliek-now\FileServiceData\ReservationEditConfiguration\Configuration_2.ren
+	    New File  		     607 2018/01/26 12:26:26	C:\Environments\Elkerliek-now\FileServiceData\ReservationEditConfiguration\Configuration_4.ren
+	  New Dir          4	C:\Environments\Elkerliek-now\FileServiceData\ReservationEditConfiguration\herstel\
+	  New Dir          3	C:\Environments\Elkerliek-now\FileServiceData\ReservationEditConfiguration\Voor 9 uur 24 sept 2014\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Scenarios\
+	                   0	C:\Environments\Elkerliek-now\FileServiceData\Screens\
+	                 314	C:\Environments\Elkerliek-now\FileServiceData\Screens\Application\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\apotheek\
+	  New Dir          3	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\DecFAB\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\iNet\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\infrdplg\
+	  New Dir          7	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\infuus\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\inkoop\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\int_card\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\int_qa90\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\I_A INV\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\I_A MW\
+	  New Dir          3	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\kleding\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\lab mw\
+	  New Dir          3	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\mpht\
+	  New Dir          9	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\mt hfd\
+	  New Dir          2	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\mt mag\
+	  New Dir         10	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\mt mw\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\Screens\Groups\STDGRP\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\SearchDomains\
+	  New Dir          7	C:\Environments\Elkerliek-now\FileServiceData\ServicePage\
+	                  80	C:\Environments\Elkerliek-now\FileServiceData\Statemachine\
+	  New Dir          1	C:\Environments\Elkerliek-now\FileServiceData\StatusMatrix\
+	                   1	C:\Environments\Elkerliek-now\FileServiceData\TD\
+	  New Dir          0	C:\Environments\Elkerliek-now\FileServiceData\VBScript\
+	  New Dir         16	C:\Environments\Elkerliek-now\FileServiceData\VBScript\NL\
+	                 440	C:\Environments\Elkerliek-now\FileServiceData\Workflows\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :       161       147        14         0         0         0
+   Files :      5897         2      5895         0         0         1
+   Bytes :   92.54 m     1.1 k   92.54 m         0         0    16.3 k
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :              607000 Bytes/sec.
+   Speed :              34.732 MegaBytes/min.
+   Ended : vrijdag 26 januari 2018 13:37:24
+

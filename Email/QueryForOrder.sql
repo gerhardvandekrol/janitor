@@ -8,29 +8,29 @@ DECLARE @OrderProjectLeadEmail nvarchar(max)
 
 select @CustomerDescription=CusDescr from dba.customer
 join dba._order on _OrdCusId=cusid
-where _OrdId='015258'
+where _OrdId='015494'
 
 select @CustomeID=CusId from dba.customer
 join dba._order on _OrdCusId=cusid
-where _OrdId='015258'
+where _OrdId='015494'
 
 select @OrderDescription=_OrdDescr from dba._order
-where _Ordid='015258'
+where _Ordid='015494'
 
 select @OrderProjectLead=EmpDescr from dba._order
 Join dba.Employee on _ordempid=EmpId
-where _Ordid='015258'
+where _Ordid='015494'
 
 select @SoftwarePakket=_CusSofteId from dba.customer
 join dba._order on _OrdCusId=cusid
-where _OrdId='015258'
+where _OrdId='015494'
 
 select @OrderHours=_OrdAgrHours from dba._order
-where _Ordid='015258'
+where _Ordid='015494'
 
 select @OrderProjectLeadEmail=EmpEmailAddress from dba._order
 Join dba.Employee on _ordempid=EmpId
-where _Ordid='015258'
+where _Ordid='015494'
 
 PRINT @CustomerDescription
 PRINT @CustomeID

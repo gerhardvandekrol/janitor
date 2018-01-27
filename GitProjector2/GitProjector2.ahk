@@ -66,19 +66,20 @@ Gui, Add, Button, gCreateIniProjectSettings x400 y160 w80 h20 , Settings
 Gui, Add, Button, gResetProject x400 y185 w80 h20 , Reset project
 
 if CanRunBatch = 1
-Gui, Add, Tab2,x10 y220 w480 h115 , Actions|Actions2
-Gui Add, GroupBox, x15 y240 w470 h90 
-Gui, Add, Button, gRequestClone x30 y260 w300 h20 , Request clone for develop/%ClientName%-%OrderId%
-;Gui, Add, Button, gSendEmail x370 y290 w100 h20 , Email
+Gui, Add, Tab2,x10 y220 w480 h115 , Actions|Build and Run
+Gui Add, GroupBox, x15 y245 w470 h70 
+Gui, Add, Button, gRequestClone x45 y270 w400 h20 , Request clone for develop/%ClientName%-%OrderId%
+
 
 if CanRunBatch = 1
 {
     Gui Tab, 2
-    Gui Add, GroupBox, x15 y240 w470 h90 
-    Gui, Add, Button, gBuildBatFile x30 y260 w100 h20 , Build Batchfile
+    ;Gui Add, GroupBox, x15 y240 w470 h90 
+    Gui, Add, Button, gBuildBatFile x30 y250 w100 h20 , Build Batchfile
     IfExist,  %EnviDir%\GitProjector2\Clone_%ClientName%-%OrderId%.bat
-    Gui, Add, Edit, x140 y245 w220 h80 ReadOnly, Clone_%ClientName%-%OrderId%.bat
-    Gui, Add, Button, gViewBatchFile x30 y285 w100 h20 , View Batchfile
+    Gui, Add, Edit, x140 y260 w220 h50 ReadOnly, Clone_%ClientName%-%OrderId%.bat
+    Gui, Add, Button, gViewBatchFile x30 y275 w100 h20 , View Batchfile
+    Gui, Add, Button, gSendEmail x30 y300 w100 h20 , Email
     Gui, Add, Button, gGetProject x400 y260 w80 h20 , Get project
     Gui, Add, Button, gRunBatchFile x400 y285 w80 h20 , Run Batchfile
 }
@@ -100,7 +101,7 @@ ButtonClose:
     ExitApp
 
 GetProject:
-FileSelectFile, ProjectIni,,%A_ScriptDir%,Sutter projectIni
+FileSelectFile,  ProjectIni,,%A_ScriptDir%,Sutter projectIni,GPProjectSettings.ini
 FileCopy, %ProjectIni%, %EnviDir%\GitProjector2\GPProjectSettings.ini,1
 GoSub, Reload
 return
@@ -115,7 +116,18 @@ SendEmail:
 Receipients= gerhard.vandekrol@ultimo.com;martijn.steenbakker@ultimo.com
 LChoice = Beste Gerhard of Martijn,
  Oi = Request for GIT cloning repository %ClientName%-%OrderId%
- Ci = Email this request to Martijn and/or Gerhard. Settings for cloning project %ClientName%-%OrderId% in stored in %A_ScriptDir%\%A_UserName%\%ClientName%-%OrderId%\GPProjectSettings.ini<br> You will be notified a.s.a.p when the repository has been cloned.
+ Ci = <p>Email this request to Martijn and/or Gerhard.</p>
+<p>Settings for cloning project %ClientName%-%OrderId% are stored in %A_ScriptDir%\%A_UserName%\%ClientName%-%OrderId%\GPProjectSettings.ini</p>
+<p>You will be notified a.s.a.p when the repository has been cloned</p>
+<hr />
+<p><em>Project is/will be cloned in repository:</em><br /><br /><em><a href="mailto:git@gitlab.ishbv.nl:css/support-update-1.git">git@gitlab.ishbv.nl:css/support-update-1.git</a></em></p>
+<p><em>Jenkins templates belonging to this repository:&nbsp;</em></p>
+<p><em><a href="http://jenkins/view/Templates/job/x-db-support-update-1 BUILDER (SQL2008-SQL2012-SQL2014)/">http://jenkins/view/Templates/job/x-db-support-update-1 BUILDER (SQL2008-SQL2012-SQL2014)/</a></em></p>
+<p><em><a href="http://jenkins/view/Templates/job/x-db-support-update-1 BUILDER (SQL2012-SQL2014-SQL2016)/">http://jenkins/view/Templates/job/x-db-support-update-1 BUILDER (SQL2012-SQL2014-SQL2016)/</a></em></p>
+<p><em>Check out Atlassian how to setup project in Jenkins: <a href="https://ultimo.atlassian.net/wiki/spaces/CSS/pages/23003189/Continuous+Integration+-+Git+-+Jenkins">https://ultimo.atlassian.net/wiki/spaces/CSS/pages/23003189/Continuous+Integration+-+Git+-+Jenkins</a></em></p>
+<hr />
+<p>Settings created with <a href="\\vmfile02.ishbv.nl\Customer Support Services\SUT\_Templates &amp; Documents\SUT SuperTools\SUTGitProjector2\GitProjector2.exe">GitProjector2</a></p>
+<hr />
  
 Recipient := Receipients
 Subject := Oi
@@ -178,7 +190,7 @@ FileSelectFolder, InputEnviMap,,0, Choose your local Environment folder
 if ErrorLevel
     Return
 MsgBox Next select the local sshkey for GITExt
-FileSelectFile, InputSSHKey ,,,Select your local SSHkey for GIT.
+FileSelectFile, InputSSHKey ,,,Select your local SSHkey for GIT.,*.ppk
 if ErrorLevel
     Return
 FileCreateDir, %EnviDir%\GitProjector2
